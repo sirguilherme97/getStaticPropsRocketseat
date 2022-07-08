@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['https://get-static-props-rocketseat.vercel.app']
+    domains: [
+      'https://avatars.githubusercontent.com/'
+    ]
   },
 
 }
