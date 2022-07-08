@@ -1,9 +1,13 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Header from "../../componets/Header";
 
 export default function Members({ user }) {
     return (
         <div>
+            <Head>
+                <title>Membros Rocketseat</title>
+            </Head>
             <Header />
             <div className="px-12 py-6 flex flex-col gap-4">
                 <h1 className="font-bold text-violet-500 text-2xl">Alguns Membros da Rocketseat</h1>

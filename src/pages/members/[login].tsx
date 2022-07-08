@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from "next"
 import Image from "next/image"
 import Header from "../../componets/Header"
 import { useRouter } from "next/router"
+import Head from "next/head"
 
 export default function MemberByLogin({ user }: any) {
     const { isFallback } = useRouter()
@@ -10,6 +11,9 @@ export default function MemberByLogin({ user }: any) {
     }
     return (
         <div>
+            <Head>
+                <title>{user.name}</title>
+            </Head>
             <Header />
             <div className="flex flex-col mt-12 justify-center items-center gap-4 p-4">
                 <div className="flex gap-4 items-center ">
