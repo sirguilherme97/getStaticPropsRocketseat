@@ -1,27 +1,28 @@
 import { GetStaticPaths, GetStaticProps } from "next"
-// import Image from "next/image"
+import Image from "next/image"
 import Header from "../../componets/Header"
 
-export default function Member({ user }) {
-    console.log(user.avatar_url)
+export default function Member({ avatar_url, name, bio, company, followers, following }) {
     return (
         <div>
             <Header />
             <div className="flex flex-col mt-12 justify-center items-center gap-4 p-4">
                 <div className="flex gap-4 items-center ">
-                    {/* <img
-                        className='rounded-full h-24 w-24 object object-cover object-center'
-                        src={user.avatar_url}
-                        alt={user.name} /> */}
+                    <Image
+                        src={avatar_url}
+                        alt={name}
+                        width={1000}
+                        height={1000}
+                    />
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col justify-center items-start">
-                            <p>{user.name}</p>
-                            <p>{user.bio}</p>
-                            <p>{user.company}</p>
+                            <p>{name}</p>
+                            <p>{bio}</p>
+                            <p>{company}</p>
                         </div>
                         <div className="flex gap-4 items-center ">
-                            <p>Seguidores: {user.followers}</p>
-                            <p>Seguindo: {user.following}</p>
+                            <p>Seguidores: {followers}</p>
+                            <p>Seguindo: {following}</p>
                         </div>
                     </div>
                 </div>
