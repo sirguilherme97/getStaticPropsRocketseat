@@ -1,4 +1,4 @@
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticProps } from "next";
 import Header from "../../componets/Header";
 
 export default function Members({ user }) {
@@ -19,7 +19,6 @@ export default function Members({ user }) {
         </div>
     )
 }
-
 
 export const getStaticProps: GetStaticProps = async () => {
     const response = await fetch('https://api.github.com/orgs/rocketseat/members')
