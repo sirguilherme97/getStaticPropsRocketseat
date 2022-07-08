@@ -1,8 +1,13 @@
 import { GetStaticPaths, GetStaticProps } from "next"
 import Image from "next/image"
 import Header from "../../componets/Header"
+import { useRouter } from "next/router"
 
-export default function Member({ user }) {
+export default function Member({ user }: any) {
+    const { isFallback } = useRouter()
+    if (isFallback) {
+        return <h1>Loading...</h1>
+    }
     return (
         <div>
             <Header />
