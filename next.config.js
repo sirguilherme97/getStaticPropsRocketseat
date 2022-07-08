@@ -2,10 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    loader: 'imgix',
-    path: 'https://get-static-props-rocketseat.vercel.app/members/',
+    domains: ['https://get-static-props-rocketseat.vercel.app']
   },
 
-} 
+}
 
 module.exports = nextConfig
