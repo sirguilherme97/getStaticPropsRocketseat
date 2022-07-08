@@ -9,7 +9,7 @@ export default function Header() {
             <Link href="/blog">
                 <a className="font-medium underline underline-offset-2 hover:text-zinc-300 transition-colors text-2xl text-zinc-50 ">Blog</a>
             </Link>
-            <Link href="/members/sirguilherme97">
+            <Link href="/members/diego3g">
                 <a className="font-medium underline underline-offset-2 hover:text-zinc-300 transition-colors text-2xl text-zinc-50 ">Membros</a>
             </Link>
         </div>

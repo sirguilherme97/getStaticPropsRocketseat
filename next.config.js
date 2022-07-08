@@ -6,6 +6,6 @@ const nextConfig = {
     path: 'https://get-static-props-rocketseat.vercel.app/members/',
   },
 
-}
+} 
 
 module.exports = nextConfig
