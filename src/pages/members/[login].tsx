@@ -11,8 +11,9 @@ export default function Member({ avatar_url, name, bio, company, followers, foll
                     <Image
                         src={avatar_url}
                         alt={name}
-                        width={1000}
-                        height={1000}
+                        width={96}
+                        height={96}
+                        className="rounded-full"
                     />
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col justify-center items-start">
